@@ -1,19 +1,21 @@
 import React from 'react';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface TextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
   error?: string;
   helperText?: string;
 }
 
 /**
- * Reusable input component with validation styling
+ * Reusable textarea component for longer form input.
  */
-export const Input: React.FC<InputProps> = ({
+export const Textarea: React.FC<TextareaProps> = ({
   label,
   error,
   helperText,
   className = '',
+  rows = 5,
   ...props
 }) => {
   return (
@@ -23,7 +25,8 @@ export const Input: React.FC<InputProps> = ({
           {label}
         </label>
       )}
-      <input
+      <textarea
+        rows={rows}
         className={`
           w-full
           px-4
@@ -39,6 +42,7 @@ export const Input: React.FC<InputProps> = ({
           focus:ring-brand-blue/15
           focus:border-brand-blue
           transition-all
+          resize-y
           ${error ? 'border-red-500 focus:border-red-600' : ''}
           ${className}
         `}

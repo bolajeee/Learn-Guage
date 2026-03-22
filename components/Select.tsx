@@ -33,14 +33,16 @@ export const Select: React.FC<SelectProps> = ({
           w-full
           px-4
           py-3
-          rounded-lg
-          border-2
+          rounded-2xl
+          border
           border-border-color
+          bg-white/85
           text-text-primary
-          bg-white
           focus:outline-none
+          focus:ring-2
+          focus:ring-brand-blue/15
           focus:border-brand-blue
-          transition-colors
+          transition-all
           cursor-pointer
           ${error ? 'border-red-500 focus:border-red-600' : ''}
           ${className}

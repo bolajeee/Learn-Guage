@@ -13,11 +13,12 @@ export const Card: React.FC<CardProps> = ({ children, className = '' }) => {
   return (
     <div
       className={`
-        bg-white
-        rounded-lg
-        border border-border-color
+        rounded-3xl
+        border border-white/70
+        bg-white/90
         p-6
-        shadow-sm
+        shadow-soft
+        backdrop-blur-sm
         ${className}
       `}
     >

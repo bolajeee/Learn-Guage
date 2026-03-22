@@ -7,13 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bg-primary': '#FAFBFC',
-        'bg-secondary': '#F3F4F6',
-        'text-primary': '#1F2937',
-        'text-secondary': '#6B7280',
-        'brand-blue': '#1E40AF',
+        'bg-primary': '#FBFCFE',
+        'bg-secondary': '#EEF3F8',
+        'text-primary': '#0F172A',
+        'text-secondary': '#64748B',
+        'brand-blue': '#1E3A8A',
         'brand-accent': '#0EA5E9',
-        'border-color': '#E5E7EB',
+        'brand-ink': '#0B1220',
+        'surface': '#FFFFFF',
+        'surface-muted': '#F8FAFC',
+        'border-color': '#D7DFE8',
+        'success': '#15803D',
+        'warning': '#B45309',
       },
       spacing: {
         'xs': '0.25rem',
@@ -22,6 +27,10 @@ module.exports = {
         'lg': '1.5rem',
         'xl': '2rem',
         '2xl': '3rem',
+      },
+      boxShadow: {
+        soft: '0 18px 60px rgba(15, 23, 42, 0.08)',
+        glow: '0 18px 50px rgba(30, 58, 138, 0.18)',
       },
     },
   },

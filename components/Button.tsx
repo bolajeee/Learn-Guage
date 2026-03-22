@@ -21,23 +21,24 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    'px-6 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2';
+    'px-5 py-3 rounded-full font-medium transition-all duration-200 flex items-center justify-center gap-2 shadow-sm';
 
   const variantStyles = {
     primary: `
       bg-brand-blue
       text-white
-      hover:bg-blue-700
-      active:bg-blue-800
-      disabled:bg-gray-300
+      hover:bg-[#16357d]
+      active:bg-[#112a63]
+      disabled:bg-slate-300
       disabled:cursor-not-allowed
+      shadow-glow
     `,
     secondary: `
-      bg-bg-secondary
+      bg-white
       text-text-primary
       border border-border-color
-      hover:bg-gray-100
-      active:bg-gray-200
+      hover:bg-surface-muted
+      active:bg-slate-100
       disabled:opacity-50
       disabled:cursor-not-allowed
     `,
